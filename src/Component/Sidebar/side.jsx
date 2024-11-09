@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/outline';
+import { MdOutlineRocket } from "react-icons/md";
+import { LuNewspaper } from "react-icons/lu";
 
 const Sidebar = () => {
   const [openMenu, setOpenMenu] = useState(null);
 
-  // Function to handle toggling the dropdowns
+ 
   const toggleMenu = (menu) => {
     setOpenMenu(openMenu === menu ? null : menu);
   };
@@ -16,14 +19,16 @@ const Sidebar = () => {
       <nav className="px-4">
         {/* Dashboards Section */}
         <div className="mb-4">
-          <h3 
-            className="text-sm font-semibold text-gray-800 cursor-pointer"
-            onClick={() => toggleMenu('dashboards')}
-          >
-            Dashboards
-          </h3>
+          <div className="flex justify-between items-center text-xl  text-gray-800 cursor-pointer" onClick={() => toggleMenu('dashboards')}>
+            <span className='flex gap-2 items-center'><MdOutlineRocket className="hover:text-blue-500 transition duration-300 ease-in-out" />Dashboards</span>
+            {openMenu === 'dashboards' ? (
+              <ChevronUpIcon className="h-5 w-5 text-gray-800" />
+            ) : (
+              <ChevronDownIcon className="h-5 w-5 text-gray-800" />
+            )}
+          </div>
           {openMenu === 'dashboards' && (
-            <ul className="mt-2 space-y-2">
+            <ul className="mt-2 space-y-2 pl-4">
               <li className="text-blue-700">Analytics</li>
               <li>Commerce</li>
               <li>Sales</li>
@@ -31,18 +36,47 @@ const Sidebar = () => {
               <li>CRM</li>
             </ul>
           )}
+           
         </div>
 
-        {/* UI Components Section */}
+        {/* Page Section */}
         <div className="mb-4">
-          <h3 
-            className="text-sm font-semibold text-blue-700 cursor-pointer"
+          <div 
+            className="flex justify-between items-center text-sm font-semibold text-blue-700 cursor-pointer"
+            onClick={() => toggleMenu('uiPages')}
+          >
+            <span>UI COMPONENTS</span>
+            {openMenu === 'uiPages' ? (
+              <ChevronUpIcon className="h-5 w-5 text-blue-700" />
+            ) : (
+              <ChevronDownIcon className="h-5 w-5 text-blue-700" />
+            )}
+          </div>
+          {openMenu === 'uiPages' && (
+            <ul className="mt-2 space-y-2 pl-4">
+              <li>Elements</li>
+              <li>Components</li>
+              <li>Tables</li>
+            </ul>
+          )}
+        </div>
+
+{/* Application Section */}
+
+        <div className="mb-4">
+          <div 
+            className="flex justify-between items-center text-sm font-semibold text-blue-700 cursor-pointer"
             onClick={() => toggleMenu('uiComponents')}
           >
-            UI COMPONENTS
-          </h3>
+            <span>UI COMPONENTS</span>
+            {openMenu === 'uiComponents' ? (
+              <ChevronUpIcon className="h-5 w-5 text-blue-700" />
+            ) : (
+              <ChevronDownIcon className="h-5 w-5 text-blue-700" />
+            )}
+          </div>
           {openMenu === 'uiComponents' && (
-            <ul className="mt-2 space-y-2">
+            <ul className="mt-2 space-y-2 pl-4">
               <li>Elements</li>
               <li>Components</li>
               <li>Tables</li>
@@ -52,14 +86,19 @@ const Sidebar = () => {
 
         {/* Dashboard Widgets Section */}
         <div className="mb-4">
-          <h3 
-            className="text-sm font-semibold text-blue-700 cursor-pointer"
+          <div 
+            className="flex justify-between items-center text-sm font-semibold text-blue-700 cursor-pointer"
             onClick={() => toggleMenu('dashboardWidgets')}
           >
-            DASHBOARD WIDGETS
-          </h3>
+            <span>DASHBOARD WIDGETS</span>
+            {openMenu === 'dashboardWidgets' ? (
+              <ChevronUpIcon className="h-5 w-5 text-blue-700" />
+            ) : (
+              <ChevronDownIcon className="h-5 w-5 text-blue-700" />
+            )}
+          </div>
           {openMenu === 'dashboardWidgets' && (
-            <ul className="mt-2 space-y-2">
+            <ul className="mt-2 space-y-2 pl-4">
               <li>Chart Boxes 1</li>
               <li>Chart Boxes 2</li>
               <li>Chart Boxes 3</li>
@@ -70,14 +109,19 @@ const Sidebar = () => {
 
         {/* Forms Section */}
         <div className="mb-4">
-          <h3 
-            className="text-sm font-semibold text-blue-700 cursor-pointer"
+          <div 
+            className="flex justify-between items-center text-sm font-semibold text-blue-700 cursor-pointer"
             onClick={() => toggleMenu('forms')}
           >
-            FORMS
-          </h3>
+            <span>FORMS</span>
+            {openMenu === 'forms' ? (
+              <ChevronUpIcon className="h-5 w-5 text-blue-700" />
+            ) : (
+              <ChevronDownIcon className="h-5 w-5 text-blue-700" />
+            )}
+          </div>
           {openMenu === 'forms' && (
-            <ul className="mt-2 space-y-2">
+            <ul className="mt-2 space-y-2 pl-4">
               <li>Elements</li>
             </ul>
           )}
