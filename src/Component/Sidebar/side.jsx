@@ -4,8 +4,9 @@ import { RiRocket2Line } from "react-icons/ri";
 import { TbBrandPagekit } from "react-icons/tb";
 import { GrInbox } from "react-icons/gr";
 import { IoCarSportOutline } from "react-icons/io5";
-
+import { LuTable2 } from "react-icons/lu";
 import { SlDiamond } from "react-icons/sl";
+import { BsPieChart } from "react-icons/bs";
 
 const Sidebar = () => {
   const [openMenu, setOpenMenu] = useState(null);
@@ -20,7 +21,7 @@ const Sidebar = () => {
       <div className="p-4">
         <h2 className="text-blue-700 font-bold text-sm">MENU</h2>
       </div>
-      <nav className="px-4 ">
+      <nav className="px-8 ">
         {/* Dashboards Section */}
         <div className="mb-4">
           <div className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md"
@@ -112,12 +113,14 @@ const Sidebar = () => {
 
 
       </nav>
+
+
       <div className="pl-4 pt-2">
-        <h2 className="text-blue-700 font-bold text-sm">MENU</h2>
+        <h2 className="text-blue-700 font-bold text-sm">UI COMPONENTS</h2>
       </div>
 
 
-      <nav className="px-4 py-4 ">
+      <nav className="px-8 py-4 ">
 
 
         {/* Elements Section */}
@@ -172,19 +175,19 @@ const Sidebar = () => {
               <li className="hover:text-blue-700">Accordions </li>
               <li className="hover:text-blue-700">Notification</li>
               <li className="hover:text-blue-700">Modals </li>
-              <li className="hover:text-blue-700">Loading Blockers/li>
-                <li className="hover:text-blue-700">Progress Bar</li>
-                <li className="hover:text-blue-700">Tooltios & Popovers</li>
-                <li className="hover:text-blue-700">Carousel</li>
-                <li className="hover:text-blue-700">Calender</li>
-                <li className="hover:text-blue-700">Pagination Boxed</li>
-                <li className="hover:text-blue-700">Count Up</li>
-                <li className="hover:text-blue-700">Scrollable</li>
-                <li className="hover:text-blue-700">Tree View</li>
-                <li className="hover:text-blue-700">Maps</li>
-                <li className="hover:text-blue-700">Ratings</li>
-                <li className="hover:text-blue-700">Image crop </li>
-                <li className="hover:text-blue-700">Guided tours</li>
+              <li className="hover:text-blue-700">Loading Blockers</li>
+              <li className="hover:text-blue-700">Progress Bar</li>
+              <li className="hover:text-blue-700">Tooltios & Popovers</li>
+              <li className="hover:text-blue-700">Carousel</li>
+              <li className="hover:text-blue-700">Calender</li>
+              <li className="hover:text-blue-700">Pagination Boxed</li>
+              <li className="hover:text-blue-700">Count Up</li>
+              <li className="hover:text-blue-700">Scrollable</li>
+              <li className="hover:text-blue-700">Tree View</li>
+              <li className="hover:text-blue-700">Maps</li>
+              <li className="hover:text-blue-700">Ratings</li>
+              <li className="hover:text-blue-700">Image crop </li>
+              <li className="hover:text-blue-700">Guided tours</li>
 
 
             </ul>
@@ -192,38 +195,72 @@ const Sidebar = () => {
         </div>
 
 
-        {/* Application Section */}
+        {/* Table Section */}
         <div className="mb-4">
           <div className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md"
-            onClick={() => toggleMenu('uiApplication')}>
+            onClick={() => toggleMenu('uiTable')}>
             <span className="flex gap-2 items-center hover:text-blue-500 transition duration-300 ease-in-out">
-              <GrInbox className="transition duration-0 text-2xl  ease-in-out" />
-              Application
+              <LuTable2 className="transition duration-0 text-2xl  ease-in-out" />
+              Table
             </span>
-            {openMenu === 'uiApplication' ? (
+            {openMenu === 'uiTable' ? (
               <ChevronUpIcon className="h-5 w-5 text-gray-800 transition duration-300 ease-in-out" />
             ) : (
               <ChevronDownIcon className="h-5 w-5 text-blue-800 transition duration-300 ease-in-out" />
             )}
           </div>
 
-          {openMenu === 'uiApplication' && (
+          {openMenu === 'uiTable' && (
             <ul className="mt-2 space-y-2 pl-8">
-              <li className="hover:text-blue-700">Mailbox</li>
-              <li className="hover:text-blue-700">Chat</li>
-              <li className="hover:text-blue-700">FQA Section</li>
-              <li className="hover:text-blue-700">Forums</li>
-
+              <li className="hover:text-blue-700">Data Table</li>
+              <li className="hover:text-blue-700">Regular Tables</li>
+              <li className="hover:text-blue-700">Grid Tables</li>
             </ul>
           )}
+        </div>
+      </nav>
+      <div className="pl-4 pt-2">
+        <h2 className="text-blue-700 font-bold text-sm">UI COMPONENTS</h2>
+      </div>
+
+
+      <nav className="px-8 py-4 ">
+
+
+        {/* Chart 1 Section */}
+        <div className="mb-4">
+          <div className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md">
+            <span className="flex gap-2 items-center hover:text-blue-500 transition duration-300 ease-in-out">
+              <BsPieChart className="transition duration-0 text-2xl  ease-in-out" />
+              Elements
+            </span>
+          </div>
         </div>
 
 
 
+        {/* Chart 1 Section */}
+        <div className="mb-4">
+          <div className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md">
+            <span className="flex gap-2 items-center hover:text-blue-500 transition duration-300 ease-in-out">
+              <BsPieChart className="transition duration-0 text-2xl  ease-in-out" />
+              Elements
+            </span>
+          </div>
+        </div>
 
 
+
+        {/* Chart 1 Section */}
+        <div className="mb-4">
+          <div className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md">
+            <span className="flex gap-2 items-center hover:text-blue-500 transition duration-300 ease-in-out">
+              <BsPieChart className="transition duration-0 text-2xl  ease-in-out" />
+              Elements
+            </span>
+          </div>
+        </div>
       </nav>
-
     </div>
 
   );
