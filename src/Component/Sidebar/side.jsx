@@ -14,6 +14,8 @@ import { FaRegLightbulb } from "react-icons/fa";
 import { PiGameController } from "react-icons/pi";
 import { GiChart } from "react-icons/gi";
 import { SlGraph } from "react-icons/sl";
+
+
 const Sidebar = () => {
   const [openMenu, setOpenMenu] = useState(null);
 
@@ -385,6 +387,7 @@ const Sidebar = () => {
             </span>
           </div>
         </div>
+
 
       </nav>
       
