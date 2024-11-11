@@ -7,7 +7,13 @@ import { IoCarSportOutline } from "react-icons/io5";
 import { LuTable2 } from "react-icons/lu";
 import { SlDiamond } from "react-icons/sl";
 import { BsPieChart } from "react-icons/bs";
-
+import { FaDigitalTachograph } from "react-icons/fa";
+import { TfiBasketball } from "react-icons/tfi";
+import { FaIdCard } from "react-icons/fa";
+import { FaRegLightbulb } from "react-icons/fa";
+import { PiGameController } from "react-icons/pi";
+import { GiChart } from "react-icons/gi";
+import { SlGraph } from "react-icons/sl";
 const Sidebar = () => {
   const [openMenu, setOpenMenu] = useState(null);
 
@@ -17,7 +23,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="w-64 bg-white h-screen shadow-md ">
+    <div className="w-64 bg-white h-full shadow-md ">
       <div className="p-4">
         <h2 className="text-blue-700 font-bold text-sm">MENU</h2>
       </div>
@@ -220,7 +226,7 @@ const Sidebar = () => {
         </div>
       </nav>
       <div className="pl-4 pt-2">
-        <h2 className="text-blue-700 font-bold text-sm">UI COMPONENTS</h2>
+        <h2 className="text-blue-700 font-bold text-sm">DASH BOARD WIDGETS</h2>
       </div>
 
 
@@ -232,7 +238,7 @@ const Sidebar = () => {
           <div className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md">
             <span className="flex gap-2 items-center hover:text-blue-500 transition duration-300 ease-in-out">
               <BsPieChart className="transition duration-0 text-2xl  ease-in-out" />
-              Elements
+              Chart Box 1
             </span>
           </div>
         </div>
@@ -243,8 +249,8 @@ const Sidebar = () => {
         <div className="mb-4">
           <div className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md">
             <span className="flex gap-2 items-center hover:text-blue-500 transition duration-300 ease-in-out">
-              <BsPieChart className="transition duration-0 text-2xl  ease-in-out" />
-              Elements
+              <FaDigitalTachograph className="transition duration-0 text-2xl  ease-in-out" />
+              Chart Box 2
             </span>
           </div>
         </div>
@@ -255,12 +261,133 @@ const Sidebar = () => {
         <div className="mb-4">
           <div className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md">
             <span className="flex gap-2 items-center hover:text-blue-500 transition duration-300 ease-in-out">
-              <BsPieChart className="transition duration-0 text-2xl  ease-in-out" />
-              Elements
+              <TfiBasketball className="transition duration-0 text-2xl  ease-in-out" />
+              Chart Box 3
             </span>
           </div>
+        </div>
+
+          {/* Chart 1 Section */}
+          <div className="mb-4">
+          <div className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md">
+            <span className="flex gap-2 items-center hover:text-blue-500 transition duration-300 ease-in-out">
+              <FaIdCard className="transition duration-0 text-2xl  ease-in-out" />
+              Profile Boxes
+            </span>
+          </div>
+        </div>
+
+      </nav>
+
+ {/* Forms Section */}
+      <div className="p-4">
+        <h2 className="text-blue-700 font-bold text-sm">Forms</h2>
+      </div>
+      <nav className="px-8 ">
+        {/* form Elements Section */}
+        <div className="mb-4">
+          <div className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md"
+            onClick={() => toggleMenu('uiFElements')}>
+            <span className="flex gap-2 items-center hover:text-blue-500 transition duration-300 ease-in-out">
+              <FaRegLightbulb className="transition text-2xl  duration-0 ease-in-out" />
+              Elements
+
+            </span>
+            {openMenu === 'uiFElements' ? (
+              <ChevronUpIcon className="h-5 w-5 text-gray-800 transition duration-300 ease-in-out" />
+            ) : (
+              <ChevronDownIcon className="h-5 w-5 text-blue-800 transition duration-300 ease-in-out" />
+            )}
+          </div>
+          {openMenu === 'uiFElements' && (
+            <ul className="mt-2 space-y-2 pl-8">
+              <li className="hover:text-blue-700">Controls</li>
+              <li className="hover:text-blue-700">Layouts</li>
+              <li className="hover:text-blue-700">validation</li>
+              <li className="hover:text-blue-700">Wizard</li>
+              
+            </ul>
+          )}
+
+
+
+
+        </div>
+
+        {/* Widgets Section */}
+        <div className="mb-4">
+          <div className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md"
+            onClick={() => toggleMenu('uiWidgets')}>
+            <span className="flex gap-2 items-center hover:text-blue-500 transition duration-300 ease-in-out">
+              <PiGameController className="transition text-2xl  duration-0 ease-in-out" />
+              Widgets
+            </span>
+            {openMenu === 'uiWidgets' ? (
+              <ChevronUpIcon className="h-5 w-5 text-gray-800 transition duration-300 ease-in-out" />
+            ) : (
+              <ChevronDownIcon className="h-5 w-5 text-blue-800 transition duration-300 ease-in-out" />
+            )}
+          </div>
+
+          {openMenu === 'uiWidgets' && (
+            <ul className="mt-2 space-y-2 pl-8">
+              <li className="hover:text-blue-700">Datepicker</li>
+              <li className="hover:text-blue-700">Range Slider</li>
+              <li className="hover:text-blue-700">Input Selects</li>
+              <li className="hover:text-blue-700">Toggle Switch </li>
+              <li className="hover:text-blue-700">WYSIWYG Editor </li>
+              <li className="hover:text-blue-700">Input Mask </li>
+              <li className="hover:text-blue-700">Clipboard  </li>
+              <li className="hover:text-blue-700">Textarea Autosize </li>
+
+            </ul>
+          )}
         </div>
       </nav>
+      <div className="pl-4 pt-2">
+        <h2 className="text-blue-700 font-bold text-sm">CHARTS</h2>
+      </div>
+
+
+      <nav className="px-8 py-4 ">
+
+
+        {/* Chart 1 Section */}
+        <div className="mb-4">
+          <div className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md">
+            <span className="flex gap-2 items-center hover:text-blue-500 transition duration-300 ease-in-out">
+              <GiChart className="transition duration-0 text-2xl  ease-in-out" />
+              Chart Box 1
+            </span>
+          </div>
+        </div>
+
+
+
+        {/* Chart 1 Section */}
+        <div className="mb-4">
+          <div className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md">
+            <span className="flex gap-2 items-center hover:text-blue-500 transition duration-300 ease-in-out">
+              <BsPieChart className="transition duration-0 text-2xl  ease-in-out" />
+              Chart Box 2
+            </span>
+          </div>
+        </div>
+
+
+
+        {/* Chart 1 Section */}
+        <div className="mb-4">
+          <div className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md">
+            <span className="flex gap-2 items-center hover:text-blue-500 transition duration-300 ease-in-out">
+              <SlGraph className="transition duration-0 text-2xl  ease-in-out" />
+              Chart Box 3
+            </span>
+          </div>
+        </div>
+
+      </nav>
+      
     </div>
 
   );
