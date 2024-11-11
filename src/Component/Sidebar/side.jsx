@@ -23,12 +23,12 @@ const Sidebar = () => {
       <nav className="px-4 ">
         {/* Dashboards Section */}
         <div className="mb-4">
-        <div  className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md"
+          <div className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md"
             onClick={() => toggleMenu('uiDashboard')}>
             <span className="flex gap-2 items-center hover:text-blue-500 transition duration-300 ease-in-out">
               <RiRocket2Line className="transition text-2xl  duration-0 ease-in-out" />
               Dashboard
-             
+
             </span>
             {openMenu === 'uiDashboard' ? (
               <ChevronUpIcon className="h-5 w-5 text-gray-800 transition duration-300 ease-in-out" />
@@ -53,7 +53,7 @@ const Sidebar = () => {
 
         {/* Page Section */}
         <div className="mb-4">
-          <div  className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md"
+          <div className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md"
             onClick={() => toggleMenu('uiPages')}>
             <span className="flex gap-2 items-center hover:text-blue-500 transition duration-300 ease-in-out">
               <TbBrandPagekit className="transition text-2xl  duration-0 ease-in-out" />
@@ -81,8 +81,8 @@ const Sidebar = () => {
 
 
         {/* Application Section */}
-<div className="mb-4">
-          <div  className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md"
+        <div className="mb-4">
+          <div className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md"
             onClick={() => toggleMenu('uiApplication')}>
             <span className="flex gap-2 items-center hover:text-blue-500 transition duration-300 ease-in-out">
               <GrInbox className="transition duration-0 text-2xl  ease-in-out" />
@@ -101,8 +101,8 @@ const Sidebar = () => {
               <li className="hover:text-blue-700">Chat</li>
               <li className="hover:text-blue-700">FQA Section</li>
               <li className="hover:text-blue-700">Forums</li>
-              
-            
+
+
             </ul>
           )}
         </div>
@@ -110,7 +110,7 @@ const Sidebar = () => {
 
 
 
-       
+
       </nav>
       <div className="pl-4 pt-2">
         <h2 className="text-blue-700 font-bold text-sm">MENU</h2>
@@ -122,7 +122,7 @@ const Sidebar = () => {
 
         {/* Elements Section */}
         <div className="mb-4">
-              <div  className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md"
+          <div className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md"
             onClick={() => toggleMenu('uiElements')}>
             <span className="flex gap-2 items-center hover:text-blue-500 transition duration-300 ease-in-out">
               <SlDiamond className="transition duration-0 text-2xl  ease-in-out" />
@@ -136,7 +136,7 @@ const Sidebar = () => {
           </div>
           {openMenu === 'uiElements' && (
             <ul className="mt-2 space-y-2 pl-8">
-        <li className="hover:text-blue-700">Buttons</li>
+              <li className="hover:text-blue-700">Buttons</li>
               <li className="hover:text-blue-700">Dropdown</li>
               <li className="hover:text-blue-700">Icon</li>
               <li className="hover:text-blue-700">Badge</li>
@@ -149,11 +149,11 @@ const Sidebar = () => {
             </ul>
           )}
         </div>
-     
+
 
         {/* Components Section */}
         <div className="mb-4">
-          <div  className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md"
+          <div className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md"
             onClick={() => toggleMenu('uicomponents')}>
             <span className="flex gap-2 items-center hover:text-blue-500 transition duration-300 ease-in-out">
               <IoCarSportOutline className="transition text-2xl  duration-0 ease-in-out" />
@@ -169,23 +169,23 @@ const Sidebar = () => {
           {openMenu === 'uicomponents' && (
             <ul className="mt-2 space-y-2 pl-8">
               <li className="hover:text-blue-700">Tabs</li>
-              <li className="hover:text-blue-700">Accordings Boxed</li>
-              <li className="hover:text-blue-700">Register</li>
-              <li className="hover:text-blue-700">Register Boxed</li>
-              <li className="hover:text-blue-700">Forgot Password</li>
-              <li className="hover:text-blue-700">Forgot Password Box</li>
-              <li className="hover:text-blue-700">Login</li>
-              <li className="hover:text-blue-700">Login Boxed</li>
-              <li className="hover:text-blue-700">Register</li>
-              <li className="hover:text-blue-700">Register Boxed</li>
-              <li className="hover:text-blue-700">Forgot Password</li>
-              <li className="hover:text-blue-700">Forgot Password Box</li>
-              <li className="hover:text-blue-700">Login</li>
-              <li className="hover:text-blue-700">Login Boxed</li>
-              <li className="hover:text-blue-700">Register</li>
-              <li className="hover:text-blue-700">Register Boxed</li>
-              <li className="hover:text-blue-700">Forgot Password</li>
-              <li className="hover:text-blue-700">Forgot Password Box</li>
+              <li className="hover:text-blue-700">Accordions </li>
+              <li className="hover:text-blue-700">Notification</li>
+              <li className="hover:text-blue-700">Modals </li>
+              <li className="hover:text-blue-700">Loading Blockers/li>
+                <li className="hover:text-blue-700">Progress Bar</li>
+                <li className="hover:text-blue-700">Tooltios & Popovers</li>
+                <li className="hover:text-blue-700">Carousel</li>
+                <li className="hover:text-blue-700">Calender</li>
+                <li className="hover:text-blue-700">Pagination Boxed</li>
+                <li className="hover:text-blue-700">Count Up</li>
+                <li className="hover:text-blue-700">Scrollable</li>
+                <li className="hover:text-blue-700">Tree View</li>
+                <li className="hover:text-blue-700">Maps</li>
+                <li className="hover:text-blue-700">Ratings</li>
+                <li className="hover:text-blue-700">Image crop </li>
+                <li className="hover:text-blue-700">Guided tours</li>
+
 
             </ul>
           )}
@@ -193,8 +193,8 @@ const Sidebar = () => {
 
 
         {/* Application Section */}
-<div className="mb-4">
-          <div  className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md"
+        <div className="mb-4">
+          <div className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md"
             onClick={() => toggleMenu('uiApplication')}>
             <span className="flex gap-2 items-center hover:text-blue-500 transition duration-300 ease-in-out">
               <GrInbox className="transition duration-0 text-2xl  ease-in-out" />
@@ -213,7 +213,7 @@ const Sidebar = () => {
               <li className="hover:text-blue-700">Chat</li>
               <li className="hover:text-blue-700">FQA Section</li>
               <li className="hover:text-blue-700">Forums</li>
-            
+
             </ul>
           )}
         </div>
@@ -221,11 +221,11 @@ const Sidebar = () => {
 
 
 
-       
+
       </nav>
-      
+
     </div>
-    
+
   );
 };
 
