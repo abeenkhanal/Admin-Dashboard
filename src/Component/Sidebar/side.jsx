@@ -63,7 +63,6 @@ const Sidebar = () => {
             </ul>
           )}
         </div>
-
 {/* Application Section */}
 
         <div className="mb-4">
