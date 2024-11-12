@@ -14,6 +14,7 @@ import { FaRegLightbulb } from "react-icons/fa";
 import { PiGameController } from "react-icons/pi";
 import { GiChart } from "react-icons/gi";
 import { SlGraph } from "react-icons/sl";
+import { Link } from 'react-router-dom';
 
 
 const Sidebar = () => {
@@ -47,8 +48,8 @@ const Sidebar = () => {
           </div>
           {openMenu === 'uiDashboard' && (
             <ul className="mt-2 space-y-2 pl-8">
-              <li className="hover:text-blue-700">Analytics</li>
-              <li className="hover:text-blue-700">Commerce</li>
+              <li className="hover:text-blue-700"><Link to="/">Analytics</Link></li>
+              <li className="hover:text-blue-700"> <Link to="/Commerce">Commerce</Link></li>
               <li className="hover:text-blue-700">Sales</li>
               <li className="hover:text-blue-700">Minimal</li>
               <li className="hover:text-blue-700">CRM</li>
