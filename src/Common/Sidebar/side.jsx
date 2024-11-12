@@ -32,7 +32,7 @@ const Sidebar = () => {
       <nav className="px-8 ">
         {/* Dashboards Section */}
         <div className="mb-4">
-          <div className="flex justify-between items-center text-base cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out rounded-md"
+          <div className="flex justify-between items-center text-base cursor-pointer  hover:bg-gray-200 transition duration-300 ease-in-out rounded-md"
             onClick={() => toggleMenu('uiDashboard')}>
             <span className="flex gap-2 items-center hover:text-blue-500 transition duration-300 ease-in-out">
               <RiRocket2Line className="transition text-2xl  duration-0 ease-in-out" />

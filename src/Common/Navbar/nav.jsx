@@ -10,7 +10,7 @@ import { RiBaseStationLine } from "react-icons/ri";
 import { FaGift } from "react-icons/fa6";
 const Nav = () => {
   return (
-    <div className="sticky top-0 w-full bg-white shadow-lg drop-shadow-md shadow-gray-300  h-full grid grid-cols-6 gap-10 px-4">
+    <div className="sticky top-0 w-full bg-white shadow-md  shadow-gray-300  h-fit grid grid-cols-6 gap-10 px-4">
     <div className="flex justify-between items-center ">
       <img
         src="https://demo.dashboardpack.com/architectui-html-pro/assets/images/logo-inverse.png"
@@ -67,7 +67,7 @@ const Nav = () => {
     </div>
     
     <div className=" col-span-2 items-center flex justify-between">
-      <div className=" flex items-center gap-5   h-full px-2">
+      <div className=" flex justify-start items-center gap-5   h-full px-2">
     <div className="flex gap-2 items-center">
     <div className="h-10 w-10 overflow-clip bg-slate-500 rounded-full flex justify-center items-center">
           <div>
