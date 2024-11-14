@@ -26,7 +26,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="w-64 bg-white h-full shadow-md ">
+    <div className="w-64 bg-white h-full shadow-md  ">
       <div className="p-4">
         <h2 className="text-blue-700 font-bold text-sm">MENU</h2>
       </div>

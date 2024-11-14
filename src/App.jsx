@@ -13,11 +13,11 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='h-screen w-full bg-green-300'>
+    <div className='h-screen   '>
       <Nav />
-      <div className='flex w-full bg-red-800'>
+      <div className='flex w-full bg-[#F1F4F6] '>
         <Sidebar />
-        <div className=''>
+        <div className='w-full'>
           <Routes>
             <Route path="/" element={<Analytics />} />
             <Route path="/commerce" element={<Commerce />} />
