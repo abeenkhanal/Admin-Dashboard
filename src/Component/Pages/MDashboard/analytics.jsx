@@ -187,7 +187,7 @@ const Analytics = () => {
         <div className='border-b'>
         <h1 className='text-l font-semibold'>SALES PROGRESS</h1>
         </div>
-        <div className='flex justify-between'>
+        <div className='flex justify-between mt-4'>
             <div>
                 <h1 className='text-xl font-semibold'>Total Orders</h1>
                 <h2 className='text-l font-medium'>Last year expenses</h2>
@@ -197,7 +197,7 @@ const Analytics = () => {
             </div>
         </div>
 
-        <ProgressBar completed="60" className='w-full mt-9'/>
+        <ProgressBar completed="23" className='w-full mt-4'/>
         <h2>YOY Growth</h2>
         
       </div>
