@@ -3,10 +3,18 @@ import { FaCar, FaStar } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaMoneyBillWave, FaGraduationCap, FaBuilding } from "react-icons/fa";
 import { Chart } from "react-google-charts";
+import { IoIosMenu } from "react-icons/io";
+import { IoCloudDownloadOutline } from "react-icons/io5";
+import { GoFlame } from "react-icons/go";
+import ProgressBar from "@ramonak/react-progress-bar";
+
 
 const Analytics = () => {
-   
+    const progress = 70; // Percentage for the progress bar
+    const totalOrders = 1896; // Total orders amount
+    const growth = 100; // Year-over-Year Growth percentage
 
+      
  const data = [
   [
     { type: "number", label: "x" },
@@ -155,28 +163,44 @@ const Analytics = () => {
           View Complete Report
         </button>
       </div>
-      <div>
-      <div>
-    <Chart
-      chartType="LineChart"
-      width="100%"
-      height="400px"
-      data={data}
-      options={options}
-    />
+      
     </div>
-    <div>
-    <Chart
-      chartType="LineChart"
-      width="100%"
-      height="400px"
-      data={data}
-      options={options}
-    />
+    <div className="flex justify-between gap-6 mt-10">
+  {/* Left Section */}
+  <div className="w-1/2 space-y-4 bg-white ">
+    <div className="flex justify-between items-center border-b h-14 p-4" >
+      <div className="flex items-center gap-2">
+        <IoCloudDownloadOutline className='text-2xl'/>
+        <span>Technical Support</span>
+      </div>
+      <IoIosMenu className='text-2xl' />
+    </div>
+    <div className="w-full">
+      <Chart
+        chartType="LineChart"
+        width="100%"
+        height="400px"
+        data={data}
+        options={options}
+      />
+    </div>
+  </div>
+
+  {/* Right Section */}
+  
+  <div className="w-1/2 bg-slate-500">
+  <div className="flex justify-between items-center border-b h-14 p-4">
+      <div className="flex items-center gap-2">
+        <GoFlame className='text-2xl'/>
+        <span>Technical Support</span>
+      </div>
+      <IoIosMenu className='text-2xl' />
+      <ProgressBar completed={60} />;
     </div>
 
-    </div>
-    </div>
+  </div>
+</div>
+
     </div>
    
         </div>
