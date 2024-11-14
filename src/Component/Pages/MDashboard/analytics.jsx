@@ -183,7 +183,27 @@ const Analytics = () => {
         data={data}
         options={options}
       />
+      <div className='p-4'>
+        <div className='border-b'>
+        <h1 className='text-l font-semibold'>SALES PROGRESS</h1>
+        </div>
+        <div className='flex justify-between'>
+            <div>
+                <h1 className='text-xl font-semibold'>Total Orders</h1>
+                <h2 className='text-l font-medium'>Last year expenses</h2>
+            </div>
+            <div>
+                <h1 className='text-3xl font-extrabold text-green-600'>$ 1896</h1>
+            </div>
+        </div>
+
+        <ProgressBar completed="60" className='w-full mt-9'/>
+        <h2>YOY Growth</h2>
+        
+      </div>
+       
     </div>
+    
   </div>
 
   {/* Right Section */}
@@ -195,7 +215,7 @@ const Analytics = () => {
         <span>Technical Support</span>
       </div>
       <IoIosMenu className='text-2xl' />
-      <ProgressBar completed={60} />;
+     
     </div>
 
   </div>
