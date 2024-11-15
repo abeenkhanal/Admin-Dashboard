@@ -9,6 +9,8 @@ import { GoFlame } from "react-icons/go";
 import ProgressBar from "@ramonak/react-progress-bar";
 import Table from '../../../Details/Table';
 import Reactchart from '../../../Details/Reactchart';
+import Task from '../../../Details/Task';
+import Chat from '../../../Details/Chat';
 
 
 const Analytics = () => {
@@ -239,6 +241,13 @@ const Analytics = () => {
         </div>
         <div>
             <Table/>
+        </div>
+        <div className='bg-emerald-500 flex justify-between p-4 '>
+            <div className='w-full '><Task/></div>
+            <div  className='w-full '><Chat/></div>
+        </div>
+        <div>
+            
         </div>
         </div>
     );

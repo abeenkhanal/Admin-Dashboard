@@ -4,14 +4,14 @@ const tasks = [
   { id: 1, title: "Wash the car", author: "Bob", status: "Rejected", color: "text-red-500", label: "REJECTED" },
   { id: 2, title: "Task with dropdown menu", author: "Johnny", status: "New", color: "text-blue-500", label: "NEW" },
   { id: 3, title: "Badge on the right task", description: "This task has show on hover actions!", label: "LATEST TASK", color: "text-green-500" },
-  { id: 4, title: "Go grocery shopping", description: "A short description for this todo item", imageUrl: "https://via.placeholder.com/50" },
+  { id: 4, title: "Go grocery shopping", description: "A short description for this todo item", imageUrl: "https://images.pexels.com/photos/9783353/pexels-photo-9783353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
   { id: 5, title: "Development Task", description: "Finish React ToDo List App", priority: 69 },
   { id: 6, title: "Wash the car", author: "Bob", status: "Rejected", color: "text-red-500", label: "REJECTED" },
 ];
 
 const Task = () => {
   return (
-    <div className="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+    <div className="max-w-md mx-auto bg-white shadow-lg  overflow-hidden">
       <div className="px-6 py-4 border-b">
         <h2 className="text-lg font-semibold text-gray-700 flex items-center">
           <span className="material-icons mr-2">list</span> Tasks List
