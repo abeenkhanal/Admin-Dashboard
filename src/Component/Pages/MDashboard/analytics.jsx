@@ -237,6 +237,9 @@ const Analytics = () => {
 <Reactchart/>
 
         </div>
+        <div>
+            <Table/>
+        </div>
         </div>
     );
 }
