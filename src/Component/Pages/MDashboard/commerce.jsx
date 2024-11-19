@@ -4,6 +4,8 @@ import { IoIosArrowDown } from "react-icons/io";
 import { FaChartPie } from "react-icons/fa";
 import { Chart } from "react-google-charts";
 import { FaEye, FaBug, FaFileAlt, FaUser } from 'react-icons/fa';
+import Activeusers from '../../../Details/Activeusers';
+import Topsellers from '../../../Details/Topsellers';
 const Duta = [
     { icon: <FaEye className="text-blue-400 text-4xl" />, title: "45.8k", subtitle: "Total Views", change: "+175.5%", changeColor: "text-green-500" },
     { icon: <FaBug className="text-blue-400 text-4xl" />, title: "63.2k", subtitle: "Bugs Fixed", change: "+175.5%", changeColor: "text-blue-500" },
@@ -95,6 +97,13 @@ const Commerce = () => {
           </div>
         </div>
       </div>
+      <div>
+        <Activeusers/>
+      </div>
+      <div>
+        <Topsellers/>
+      </div>
+      
         </div>
 
     )
