@@ -26,7 +26,7 @@ const TopSellers = () => {
       role: "Lead UX Developer",
       leads: 12,
       sales: 56.24,
-      profileImg: "https://via.placeholder.com/100",
+      profileImg: "https://images.pexels.com/photos/9783353/pexels-photo-9783353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       bgImg:
         "https://images.unsplash.com/photo-1581090700227-2875fd4946dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
       customImg:
@@ -37,7 +37,7 @@ const TopSellers = () => {
       role: "Short profile description",
       leads: 8,
       sales: 45.89,
-      profileImg: "https://via.placeholder.com/100",
+      profileImg: "https://images.pexels.com/photos/9783353/pexels-photo-9783353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       bgImg:
         "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
     },
@@ -46,7 +46,7 @@ const TopSellers = () => {
       role: "Etiam sit amet orci eget",
       leads: 15,
       sales: 76.34,
-      profileImg: "https://via.placeholder.com/100",
+      profileImg: "https://images.pexels.com/photos/9783353/pexels-photo-9783353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       bgImg:
         "https://images.unsplash.com/photo-1494883759339-0b042055a4ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
     },
@@ -64,22 +64,21 @@ const TopSellers = () => {
             className="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 w-full max-w-sm mx-auto"
           >
             {/* Background Image */}
-            <div
-              className={`h-32 ${
-                index === 0 ? "bg-cover bg-center relative" : "bg-cover bg-center"
-              }`}
-              style={{
-                backgroundImage: `url(${seller.bgImg})`,
-              }}
-            >
-              {index === 0 && seller.customImg && (
-                <img
-                  src={seller.customImg}
-                  alt="Custom Highlight"
-                  className="absolute bottom-2 right-2 w-12 h-12 rounded-full border-2 border-white"
-                />
-              )}
-            </div>
+            <div className="text-center">
+                  <p>
+                    <span className="text-red-500 font-semibold">
+                      {seller.leads} new leads,
+                    </span>{" "}
+                    <span className="text-green-500 font-semibold">
+                      ${seller.sales.toFixed(2)}
+                    </span>{" "}
+                    in sales
+                  </p>
+                  <button className="border border-blue-500 text-blue-500 mt-4 px-4 py-2 rounded w-full flex items-center justify-center hover:bg-blue-100">
+                    <HiOutlineChartBar className="mr-2" />
+                    Full Report
+                  </button>
+                </div>
 
             {/* Profile Section */}
             <div className="p-6 relative -mt-10">

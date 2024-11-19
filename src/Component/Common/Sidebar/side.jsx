@@ -50,7 +50,7 @@ const Sidebar = () => {
             <ul className="mt-2 space-y-2 pl-8">
               <li className="hover:text-blue-700"><Link to="/">Analytics</Link></li>
               <li className="hover:text-blue-700"> <Link to="/Commerce">Commerce</Link></li>
-              <li className="hover:text-blue-700">Sales</li>
+              <li className="hover:text-blue-700"><Link to= "/Sales">Sales</Link></li>
               <li className="hover:text-blue-700">Minimal</li>
               <li className="hover:text-blue-700">CRM</li>
             </ul>

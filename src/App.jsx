@@ -8,6 +8,7 @@ import Sidebar from './Component/Common/Sidebar/side'
 import { Route, Routes } from "react-router-dom";
 import Analytics from './Component/Pages/MDashboard/analytics';
 import Commerce from './Component/Pages/MDashboard/commerce';
+import Sales from './Component/Pages/MDashboard/Sales';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +22,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Analytics />} />
             <Route path="/commerce" element={<Commerce />} />
+            <Route path="/sales" element={<Sales />} />
           </Routes>
         </div>
       </div>
