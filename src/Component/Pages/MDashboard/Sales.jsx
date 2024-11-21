@@ -18,6 +18,8 @@ const Sales = () => {
                             This is an example dashboard created using built-in elements and components.
                         </p>
                     </div>
+
+                    
                 </div>
                 {/* Right Section */}
                 <div className="flex items-center space-x-2">
